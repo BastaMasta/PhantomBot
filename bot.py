@@ -91,5 +91,6 @@ async def login(ctx):
         await author1.send("The request was timed out (500 seconds)")
         print("timeout by {0}".format(author1.display_name))
 
+#include command and corresponding method to close connection
 
 PhantomBot.run(TOKEN)
