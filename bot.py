@@ -100,4 +100,5 @@ async def shutdown(ctx):
     await asyncio.sleep(5)
     await ctx.bot.close()
 
+
 PhantomBot.run(TOKEN)
