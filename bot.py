@@ -4,6 +4,7 @@
 # In case of any issues with the bot, make sure let me know on discord: BASTAMASTA#6003
 # Check out my Fiverr page: https://www.fiverr.com/bastamasta
 
+import asyncio
 import discord
 from discord import Intents
 from discord.ext import commands
@@ -91,5 +92,12 @@ async def login(ctx):
         await author1.send("The request was timed out (500 seconds)")
         print("timeout by {0}".format(author1.display_name))
 
+@PhantomBot.command()
+@commands.is_owner()
+async def shutdown(ctx):
+    print("Shutdown initiated by {0}".format(ctx.message.autor))
+    await ctx.send("Shutting down the bot in 5 seconds")
+    await asyncio.sleep(5)
+    await ctx.bot.close()
 
 PhantomBot.run(TOKEN)
