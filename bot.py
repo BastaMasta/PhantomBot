@@ -102,3 +102,7 @@ async def shutdown(ctx):
 
 
 PhantomBot.run(TOKEN)
+
+
+#WHY HEROKU WHY
+#WHY DO YOU HAVE TO DISABLE ALL FREE PIPELINES
