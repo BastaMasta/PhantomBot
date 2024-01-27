@@ -4,6 +4,8 @@
 # In case of any issues with the bot, make sure let me know on discord: BASTAMASTA#6003
 # Check out my Fiverr page: https://www.fiverr.com/bastamasta
 
+#Heroku not working anymore
+
 import asyncio
 import discord
 from discord import Intents
